@@ -29,6 +29,7 @@ const questions = [
     text: "How much do you love me?(๑>◡<๑)",
     yesBtn: "Very much!",
     noBtn: "as much as i love my big toe"
+    secretAnswer: "You and your soul are calming like a beautiful field of flowers in srping."
   },
   {
     text: "Would maybe...possibly answer my next question for me?ꉂ(˵˃ ᗜ ˂˵)",
@@ -61,7 +62,7 @@ function showQuestion(index){
 
 function showHiddenMessage(message){
   hiddenMessage.innerText = message;
-  // Wait 20 seconds before showing next button
+  // Wait 15 seconds before showing next button
   setTimeout(() => {
     nextBtn.style.display = 'inline-block';
   }, 20000);
