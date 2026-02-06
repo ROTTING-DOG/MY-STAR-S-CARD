@@ -62,7 +62,7 @@ function showQuestion(index){
 
 function showHiddenMessage(message){
   hiddenMessage.innerText = message;
-  // Wait 15 seconds before showing next button
+  // Wait 12 seconds before showing next button
   setTimeout(() => {
     nextBtn.style.display = 'inline-block';
   }, 20000);
@@ -78,7 +78,7 @@ yesBtn.addEventListener('click', () => {
 });
 
 noBtn.addEventListener('click', () => {
-  // Allow clicking "No" and just go to next question after 20 sec
+  // Allow clicking "No" and just go to next question after 3 sec
   const q = questions[currentQuestion];
   if(q.secretAnswer){
     showHiddenMessage(q.secretAnswer);
@@ -93,7 +93,7 @@ nextBtn.addEventListener('click', () => {
     showQuestion(currentQuestion);
   } else {
     // Celebration
-    questionTitle.innerText = "Yay! I'm the luckiest person...";
+    questionTitle.innerText = "I'm the luckiest person in the world, thank you so much my star.";
     hiddenMessage.innerText = "Thank you so much for gracing my life with your presence and light. 💐🌸💞💗💋🫂";
     yesBtn.style.display = 'none';
     noBtn.style.display = 'none';
